@@ -10,5 +10,5 @@ void setup()
 void draw()
 {
   image(backGroundImage,0,0,width,height);
-  santaWalking();
+  day16();
 }
