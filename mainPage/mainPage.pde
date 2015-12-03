@@ -18,10 +18,7 @@ void draw()
 {
   
   image(backGroundImage,0,0,width,height);
-<<<<<<< HEAD
   day16();
-=======
-  santaWalking();
   noStroke();
   
   
@@ -30,5 +27,5 @@ void draw()
   {
     _snow[i].circle();
   }
->>>>>>> antonilund/master
+
 }
