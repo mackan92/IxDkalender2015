@@ -23,11 +23,12 @@ PImage moon;
 int m2 = millis();
 void setup()
 {
-  size(1920, 1080);
+  size(1920, 1080, P2D);
   backGroundImage = loadImage("background.png");
   santa = loadImage("santa.png");
   moon = loadImage("moon.png");
   santawithreindeers = loadImage("santawithreindeers.png");
+  moon =   loadImage("moon.png");
   for (int i = 0; i < _snow.length; i++)
   {
     _snow[i] = new Snow();
@@ -40,8 +41,9 @@ void draw()
   image(backGroundImage,0,0,width,height);
   timer = millis();
   image(backGroundImage, 0, 0, width, height);
+   moon();
+
   tint(255, 150);
-  image(moon, 600, -400, 700, 700);
   noTint();
   fix();
   mouse();
